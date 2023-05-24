@@ -9,6 +9,8 @@ const page = async () => {
     "https://jsonplaceholder.typicode.com/posts/1"
   );
 
+  throw new Error("not authed");
+
   return <div>{JSON.stringify(data)}</div>;
 };
 export default page;
